@@ -1,0 +1,48 @@
+\documentclass{article}
+\usepackage{amsmath}
+\usepackage{amssymb}
+
+\title{MAT 5210 Homework 6}
+\author{}
+\date{}
+
+\begin{document}
+
+\maketitle
+
+\begin{enumerate}
+    \item Let $K / \mathbf{Q}$ be Galois, with $\operatorname{Gal}(K / \mathbf{Q}) = \{\sigma_1 = \text{id}, \sigma_2, \ldots, \sigma_n\}$. Fix a prime integer $p \in \mathbf{Z}$.
+    \begin{enumerate}
+        \item[(a)] Let $P$ be a nonzero prime ideal of $\mathcal{O}_K$ lying above $p$, i.e., $P \cap \mathbf{Z} = p\mathbf{Z}$. Show that $\sigma_i(P)$ is also a prime ideal of $\mathcal{O}_K$ lying above $p$.
+    \end{enumerate}
+
+    We now study an alternative proof that all prime ideals lying above $p$ are of the form $\sigma_i(P)$ for some $i$ - Suppose on the contrary that there exists a prime ideal $J$ above $p$ such that $J \neq \sigma_i(P)$ for all $i$. Consider
+    \[
+    A := \prod_{i=1}^{n} \sigma_i(P), \quad B := \prod_{i=1}^{n} \sigma_i(J)
+    \]
+    \begin{enumerate}
+        \item[(b)] Show that there exists $x \in A$ such that $x - 1 \in B$.
+        \item[(c)] Let $m := \operatorname{Norm}_{K / \mathbf{Q}}(x) \in  \mathbf{Z}$. Show that $m \in A$. %(Hint: $\operatorname{Norm}_{K / \mathbf{Q}}(x) := \sigma_1(x) \ldots \sigma_n(x)$).
+        \item[(d)] Show that $m \in p\mathbf{Z} = J \cap \mathbf{Z}$.
+        \item[(e)] Using (d), show that $x \in \sigma_j(J)$ for some $j$.
+        \item[(f)] Prove that for the $j$ obtained in (e), $1 \in \sigma_j(J)$, which contradicts the fact that $\sigma_j(J)$ is a (proper) prime ideal.
+    \end{enumerate}
+
+    \item Let $K : \mathbf{Q}$ be a number field with $[K : \mathbf{Q}] = n$.
+    \begin{enumerate}
+        \item Using the Minkowski bound, show that $\sqrt{|\Delta^2(K)|} \geq b_n$, where $b_n := \left(\frac{\pi}{4}\right)^n \frac{n^n}{n!}$.
+        \item Prove that for all $n > 1$,
+        \[
+        \frac{b_{n+1}}{b_n} \geq \frac{\pi}{2}
+        \]
+        \item Consequently, show that for $K \neq \mathbf{Q}$, $|\Delta^2(K)| > 1$.
+    \end{enumerate}
+
+    \item Suppose a prime integer $p \in \mathbf{Z}$ does not divide the class number of a number field $K$. Show that if $I$ is a non-zero ideal of $\mathcal{O}_K$, and $I^p$ is a principal ideal, then $I$ is also a principal ideal.
+
+    \item Calculate the class number of $K = \mathbf{Q}(\sqrt{-23})$.
+
+    \item Prove that the class number of $K = \mathbf{Q}(\sqrt{-47})$ is 5. Show that if $x, y \in \mathbf{Z}$ with $y^3 = 4x^2 + 47$, then $x = \pm 250$.
+\end{enumerate}
+
+\end{document}

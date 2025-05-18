@@ -1,0 +1,58 @@
+\documentclass{article}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\title{MAT 5210 Homework 3}
+\date{}
+\begin{document}
+\maketitle
+\begin{enumerate}
+    \item Let $\Phi_{m}(x) \in \mathbb{C}[x]$ be the $m$-th cyclotomic polynomial, the monic polynomial whose roots are the primitive $m$-th roots of 1 in $\mathbb{C}$. Show that
+    \begin{enumerate}
+        \item $\Phi_{1}(x) = x - 1$; $\Phi_{2}(x) = x + 1$; $\Phi_{3}(x) = x^2 + x + 1$; $\Phi_{4}(x) = x^2 + 1$.
+        \item $\prod_{d \mid m} \Phi_{d}(x) = x^m - 1$.
+        \item $\Phi_{m}(x) \in \mathbb{Z}[x]$. [Hint: prove first that $\Phi_{m}(x) \in \mathbb{Q}[x]$ by induction on $m$].
+        \item If $p$ is prime then $\Phi_{p}(x) = 1 + x + x^2 + \cdots + x^{p-1}$ and $\Phi_{p^n}(x) = \Phi_{p}(x^{p^{n-1}})$.
+        \item $\operatorname{deg} \Phi_{nm} = \operatorname{deg} \Phi_{m} \operatorname{deg} \Phi_{n}$ if $(m, n)$ are relatively prime.
+    \end{enumerate}
+
+    \item Find the Galois groups of the following polynomials and for each subgroup identify the corresponding subfield of the splitting field:
+    \begin{enumerate}
+        \item $x^2 + 1$ over $\mathbb{R}$;
+        \item $x^3 - 1$ over $\mathbb{Q}$;
+        \item $x^3 - 5$ over $\mathbb{Q}$;
+        \item $x^6 - 3x^3 + 2$ over $\mathbb{Q}$;
+        \item $x^5 - 1$ over $\mathbb{Q}$;
+        \item $x^6 + x^3 + 1$ over $\mathbb{Q}$.
+    \end{enumerate}
+
+    \item Prove that $\mathbb{Q}(\sqrt{2 + \sqrt{2}})$ is Galois over $\mathbb{Q}$, and find its Galois group.
+
+    \item Find the Galois group of the polynomial $x^{p^n} - x - t$ over $\mathbb{F}_{p^n}(t)$ (you can assume that this polynomial is irreducible over $\mathbb{F}_{p^n}(t)$).
+
+    \item Let $p$ be an odd prime, $K = \mathbb{F}_{p}(t)$, and $f = x^4 - t \in K[x]$.
+    \begin{enumerate}
+        \item Find the splitting field $E$ of $f$ distinguishing the cases $p \equiv 1 \bmod 4$ and $p \equiv 3 \bmod 4$. (Hint: if $\alpha$ is a root of $f$, find $c \in E$ such that $c\alpha$ is a root of $f$).
+        \item Write down a set of generators for $Gal(E/K)$ distinguishing the cases $p \equiv 1 \bmod 4$ and $p \equiv 3 \bmod 4$.
+        \item In the case $p \equiv 1 \bmod 4$ write down the Galois correspondence for $E: K$ and $Gal(E/K)$.
+    \end{enumerate}
+
+    \item In this exercise you will complete the characterization of finite fields. Let $L$ be a finite field. Recall that there exists a prime number $p$, and a positive integer $n$ such that $|L| = p^n$. Recall that $(L^*, \cdot)$ is a cyclic group.
+    \begin{enumerate}
+        \item Show that there exists an irreducible polynomial $g(x) \in \mathbb{F}_{p}[x]$ such that $L \cong \mathbb{F}_{p}[x] / (g(x))$.
+        \item Show that $L$ is a Galois extension of $\mathbb{F}_{p}$.
+        \item Show that, up to isomorphism, there exists a unique finite field of cardinality $p^n$. This finite field is denoted by $\mathbb{F}_{p^n}$.
+        \item Show that the map $\varphi: \mathbb{F}_{p^n} \longrightarrow \mathbb{F}_{p^n}$ defined by $\varphi(y) := y^p$ is an automorphism of $\mathbb{F}_{p^n}$. This map is called the Frobenius automorphism.
+        \item Show that $Gal(\mathbb{F}_{p^n}/\mathbb{F}_{p}) \cong (\mathbb{Z} / n \mathbb{Z}, +)$.
+    \end{enumerate}
+
+    \item Let $\ell$ be a positive integer, $p$ be a prime number, and $f_{\ell} = x^{2^\ell} + 1 \in \mathbb{F}_{p}[x]$. If $N > 1$ is an integer, we denote by $(\mathbb{Z} / N \mathbb{Z})^*$ the set of invertible elements of the ring $\mathbb{Z} / N \mathbb{Z}$. Recall that $((\mathbb{Z} / N \mathbb{Z})^*, \cdot)$ is a multiplicative group.
+    \begin{enumerate}
+        \item Show that any polynomial of degree 2 in $\mathbb{F}_{p}[x]$ splits in $\mathbb{F}_{p^2}[x]$.
+        \item Show that for $p = 3$ the polynomial $f_{1}$ is irreducible in $\mathbb{F}_{3}[x]$ and give a construction of the field $\mathbb{F}_{3^2}$.
+        \item Show that the splitting field of $f_{\ell}$ is isomorphic to the splitting field of $x^{2^{\ell+1}} - 1 \in \mathbb{F}_{p}[x]$.
+        \item Prove that for $p = 5$ the polynomial $f_{2} \in \mathbb{F}_{5}[x]$ is reducible.
+        \item Show that there exists an integer $\ell$ such that for any prime number $p$, the polynomial $f_{\ell}$ is reducible in $\mathbb{F}_{p}[x]$. (Hint: show first that $((\mathbb{Z} / 2^n \mathbb{Z})^*, \cdot)$ is not a cyclic group if $n \geq 3$).
+    \end{enumerate}
+\end{enumerate}
+
+\end{document}
